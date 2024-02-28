@@ -10,7 +10,7 @@ The vulnerability can be exploited by an attacker by manipulating the input para
 
 An attacker can manipulate the event_id parameter in the HTTP request to inject malicious SQL code.
 
-PoC:
+#### PoC:
 
 ```
 POST /event-management-master/backend/register.php HTTP/1.1
@@ -28,7 +28,7 @@ VALUES (NULL,'1'; DROP TABLE participants; --', 'test', 'test@gmail.com', '05555
 To mitigate this, use prepared statements or parameterized queries to ensure proper sanitization of user inputs.
 
 
-Vulnerable code section:
+## Vulnerable code section:
 ```
 $event_id = $_POST['event_id'];
 $mobile = $_POST['mobile'];
