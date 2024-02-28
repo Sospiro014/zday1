@@ -5,7 +5,7 @@ The code in register.php is vulnerable to SQL injection, allowing an attacker to
 
 ## Proof of Concept (PoC):
 
-###SQL Injection:
+### SQL Injection:
 The vulnerability can be exploited by an attacker by manipulating the input parameters. For example, the event_id parameter is directly used in the SQL query without proper validation or parameterization:
 
 An attacker can manipulate the event_id parameter in the HTTP request to inject malicious SQL code.
