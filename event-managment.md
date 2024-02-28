@@ -30,22 +30,37 @@ To mitigate this, use prepared statements or parameterized queries to ensure pro
 
 ## Vulnerable code section:
 ```
-$event_id = $_POST['event_id'];
-$mobile = $_POST['mobile'];
-$name = "/^[a-zA-Z ]+$/";
-$emailValidation = "/^[_a-z0-9-]+(\.[_a-z0-9-]+)*@[a-z0-9]+(\.[a-z]{2,4})$/";
-$number = "/^[0-9]+$/";
+// ... (other code)
 
-...
+if(empty($full_name)  || empty($email)  || empty($mobile)) {
+    // Error messages and actions for incomplete data
+} else {
+    if(!preg_match($name,$full_name)){
+        // Error messages and actions for invalid full name
+    }
 
-if(!preg_match($number,$mobile)){
-    // Vulnerable to bypass using non-numeric characters
-    echo "<div class='alert alert-warning'>
-            <a href='#' class='close' data-dismiss='alert' aria-label='close'>&times;</a>
-            <b>Mobile number $mobile is not valid</b>
-          </div>";
-    exit();
+    // Additional regex checks for email and mobile format
+
+    // Verifying mobile number length
+    if(!(strlen($mobile) == 10)){
+        // Error message and action for invalid mobile number length
+    }
+
+    // Database insertion operation
+    $sql = "INSERT INTO `participants` 
+            (`p_id`,`event_id`, `fullname`, `email`, 
+             `mobile`,  `college`, `branch`) 
+            VALUES (NULL,'$event_id', '$full_name',  '$email', 
+             '$mobile', '$college', '$branch')";
+            
+    if(mysqli_query($con,$sql)){
+        // Successful registration message
+        echo "register_success";
+        echo "<script> location.href='index.php'; </script>";
+        exit;
+    }
 }
+
+// ... (other code)
+
 ```
-
-
