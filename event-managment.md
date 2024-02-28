@@ -1,12 +1,9 @@
-Vulnerability Description:
+# Vulnerability Description:
 
 The code in register.php is vulnerable to SQL injection, allowing an attacker to manipulate the SQL query and potentially perform unauthorized actions on the database. Additionally, the code lacks proper input validation and sanitization, making it susceptible to various forms of attacks such as cross-site scripting (XSS) and potential security risks.
 
 
-Proof of Concept (PoC):
-
-
-
+## Proof of Concept (PoC):
 
 SQL Injection:
 The vulnerability can be exploited by an attacker by manipulating the input parameters. For example, the event_id parameter is directly used in the SQL query without proper validation or parameterization:
