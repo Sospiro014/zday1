@@ -1,3 +1,14 @@
+- Title: Internet Banking System - Authenticated RCE
+- Application: Internet Banking System
+- Date: 08.03.2024
+- Bugs: Remote code execution
+- Exploit Author: SoSPiro
+- Vendor Homepage: https://codeastro.com/author/nbadmin/
+- Software Link: https://codeastro.com/internet-banking-system-in-php-with-source-code/
+- Version: 1.0
+- Tested on: Windows 10 64 bit Wampserver
+
+
 ## Vulnerability Description:
 
 - There is a file upload security vulnerability in the pages_account.php file of the Client Portal. This vulnerability allows users to upload malicious files that could potentially impact the system. Due to the lack of file type checks, attackers can upload unwanted files.
