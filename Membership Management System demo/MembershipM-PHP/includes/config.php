@@ -1,0 +1,14 @@
+<?php
+$servername = "db";
+$username = "root";
+$password = "your_root_password";
+$dbname = "membershiphp";
+
+$conn = new mysqli($servername, $username, $password, $dbname);
+
+if ($conn->connect_error) {
+    die("Connection failed: " . $conn->connect_error . ".<br> Please create a database and import the SQL file");
+}
+
+// Start Session
+session_start();
