@@ -1,13 +1,13 @@
-# Exploit Title: Event Management - SQL Injection
-# Application: Event Management
-# Date: 19.02.2024
-# Bugs: SQL Injection 
-# Exploit Author: SoSPiro
-# Vendor Homepage: https://github.com/PuneethReddyHC
-# Software Link: https://github.com/PuneethReddyHC/event-management
-# Version:1.0
-# Attack Type: Remote
-# Tested on: Windows 10 64 bit Wampserver 
+## Exploit Title: Event Management - SQL Injection
+## Application: Event Management
+## Date: 19.02.2024
+## Bugs: SQL Injection 
+## Exploit Author: SoSPiro
+## Vendor Homepage: https://github.com/PuneethReddyHC
+## Software Link: https://github.com/PuneethReddyHC/event-management
+## Version:1.0
+## Attack Type: Remote
+## Tested on: Windows 10 64 bit Wampserver 
 
 
 # About project:
