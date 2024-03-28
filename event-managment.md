@@ -1,6 +1,7 @@
 ## software link: https://github.com/PuneethReddyHC/event-management
 ## vendor : https://github.com/PuneethReddyHC
 
+### CVE-2024-28322
 
 # Vulnerability Description:
 
