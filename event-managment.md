@@ -1,5 +1,5 @@
-# software link: https://github.com/PuneethReddyHC/event-management
-# vendor : https://github.com/PuneethReddyHC
+## software link: https://github.com/PuneethReddyHC/event-management
+## vendor : https://github.com/PuneethReddyHC
 
 
 # Vulnerability Description:
