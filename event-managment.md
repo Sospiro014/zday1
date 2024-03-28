@@ -1,3 +1,7 @@
+# software link: https://github.com/PuneethReddyHC/event-management
+# vendor : https://github.com/PuneethReddyHC
+
+
 # Vulnerability Description:
 
 The code in register.php is vulnerable to SQL injection, allowing an attacker to manipulate the SQL query and potentially perform unauthorized actions on the database. Additionally, the code lacks proper input validation and sanitization, making it susceptible to various forms of attacks such as cross-site scripting (XSS) and potential security risks.
