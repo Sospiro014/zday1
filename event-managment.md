@@ -10,13 +10,13 @@
 ## Tested on: Windows 10 64 bit Wampserver 
 
 
-# About project:
+### About project:
 
 helps to register an users for on events conducted in college fests with simple logic with secured way
 
 
 
-## Vulnerability Details:
+### Vulnerability Details:
 
 - **Application Name**: Event Management
 - **Software Link**: [Download Link](https://github.com/PuneethReddyHC/event-management)
@@ -24,9 +24,9 @@ helps to register an users for on events conducted in college fests with simple 
 
 
 
-# Vulnerable code section:
+### Vulnerable code section:
 
-# https://github.com/PuneethReddyHC/event-management/blob/master/backend/register.php#L64
+### https://github.com/PuneethReddyHC/event-management/blob/master/backend/register.php#L64
 
 <?php
 
@@ -67,13 +67,13 @@ if(empty($full_name)  || empty($email)  || empty($mobile)) {
 
 
 
-# Vulnerability Description:
+### Vulnerability Description:
 
 The code in register.php is vulnerable to SQL injection, allowing an attacker to manipulate the SQL query and potentially perform unauthorized actions on the database. Additionally, the code lacks proper input validation and sanitization, making it susceptible to various forms of attacks such as cross-site scripting (XSS) and potential security risks.
 
 
 
-# Proof of Concept (PoC):
+### Proof of Concept (PoC):
 
 SQL Injection:
 
